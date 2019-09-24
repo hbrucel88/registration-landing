@@ -1,0 +1,450 @@
+body{
+    font-family: Cabin;
+    background-color: aliceblue
+
+}
+.php{
+    z-index: 1000; font-size: 30px;
+}
+.container{
+    max-width: 100vw;
+    overflow: hidden;
+}
+.bgImg{
+    margin-top: 0;
+    background: linear-gradient( transparent 60%, rgba(0,0,0,.8) 90%),
+     url("https://thewallpaper.co//wp-content/uploads/2017/09preview/nature-nature-wallpapers-shrubs-grass-backgrounds-bridge-park-photos-garden-river-windows-pictures.jpg");
+    width: 100%;
+    height: 65vh;
+    background-size: cover;
+    opacity: .8; 
+    padding: 5px 0;
+    text-align: center;
+    /* display:flex;
+    flex-wrap:wrap; */
+}
+.formWrap{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    background-image: linear-gradient(#EFEDB9, #6cb60d, #58940a);
+    padding: 20px;
+    box-shadow: -2px 2px 1px #6b512d;
+    
+}
+.formWrap label, select{
+    display: block;
+    font-family: Cabin;
+}
+.formWrap input, .formWrap select{
+    width: 210px;
+
+}
+.formBtn{
+    margin: 8%;
+    font-family: Cabin;
+    font-size: 1.3em;
+    background-color: #F0E908;
+    border-color:#6b512d;
+
+}
+.error{
+    color: rgb(243, 14, 14);
+    background-color: #fff;
+    padding: 5px;
+}
+.registered{
+    color: rgb(15, 177, 56);
+    background-color: #fff;
+    padding: 5px;
+}
+.logoWrap{
+    width: 100%;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    right: 23%;
+    top: 0;
+    font-family: Syncopate;
+    font-size: 3em;
+    font-weight: bolder;
+    color: #EFEDB9;
+    z-index: 2;
+    border: 4px solid #EFEDB9;
+    margin: 15px;
+    padding:2px 4px 2px 5px;
+    min-width: 115px;
+    text-shadow: 1px 1px 3px #000;
+    box-shadow: -2px 2px 3px #6b512d;
+    flex-basis: 100%;
+    justify-self: right;
+    background-color: #6cb60d;
+}
+.logo i{
+    display: inline-block;
+    color: #000;
+    background-color: #EFEDB9;
+    mix-blend-mode: screen;
+    border-radius: 2px;
+    margin: 0 5px;
+
+}
+.CTA{
+    /* position: absolute; */
+    padding-top: 18%;
+    font-family:Cabin;
+    font-size: 2em;
+    color: #F0E908;
+    z-index: 2;
+    text-shadow: -4px 1px 1px #000;
+    
+}
+.CTA span{
+    font-size: 1.4em;
+    color: #F0E908;
+    text-shadow: -4px 1px 1px #000;
+    font-family: Cinzel;
+}
+.catchy{
+    font-family:Caveat;
+    font-size: 1.4em;
+    color: #EFEDB9;
+    background-image: radial-gradient(rgb(250, 171, 25), rgb(15, 99, 26));
+    z-index: 2;
+    padding: 2px;
+    text-shadow: -2px 1px 1px #000;
+    border-radius: 15px;
+}
+.hero p{
+    font-family: Cabin;
+    color: rgb(26, 32, 37);
+    text-shadow: 0 0 1px #000;
+    padding: 10px;
+    background-image: radial-gradient(aliceblue, #efedb9);
+    margin-right: 5%;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.signUp{
+    /* position: absolute; */
+    font-family:Cabin;
+    font-size: .9em;
+    color: #EFEDB9;
+    z-index: 2;
+    text-align: center;
+    text-shadow: -1px 1px 1px #000;
+    line-height: 3em;
+    padding-right:5px;
+
+}
+.signUp span{
+    font-size: 2em;
+    /* color:#F97F05; */
+    color:#F0E908;
+}
+#btnBox{
+    position: relative;
+    z-index: 1000;
+}
+#btnBox:active{
+    box-shadow: 0 0 5px #2c2c2c;
+
+}
+.btnTop, .btnMid, .btnBottom, .btnHide{
+    position: absolute;
+    width:30px;
+    height: 5px;
+    margin: 10px;
+    background-color: #EFEDB9;
+    /* opacity: .8 */
+}
+.btnTop{
+    top: 0;
+    left: 0;
+  /*   box-shadow: 1px 1px 1px #2c2c2c; */
+}
+.btnMid{
+    top: 9px;
+    left: 0;
+  /*   box-shadow: 1px 1px 1px #2c2c2c; */
+  }
+.btnBottom{
+    top: 19px;
+    left: 0;
+  /*   box-shadow: 1px 1px 1px #2c2c2c; */
+}
+.btnHide{
+    top: 1000px;
+    left: 1000px;
+    width: 31px;
+}
+.btnClose{
+    position: absolute;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 25px;
+    color: #2c2c2c;
+    text-shadow: 0 0 5px #000;
+    top: 400px;
+    left: 600px;
+    opacity: 0;
+}
+  /* side nav */
+  .navSide{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    background-image: linear-gradient(aliceblue, #efedb9);
+    min-height: 200px;
+    margin-left: 5px;
+    box-shadow: 2px 2px 1px #EFEDB9;
+    padding: 0;
+    z-index: 3;
+    border: solid 1px #2c2c2c;
+    opacity: .98;
+    border-radius: 2px;
+  }
+  .navSide ul{
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .navSide ul li{
+    list-style-type: none;
+    padding: 20px 0;
+  }
+  .navSide ul li:first-child{
+    padding-top: 10px;
+  }
+  .navSide ul li a{
+    text-decoration: none;
+    font-family: Cabin;
+    color: #2c2c2c;
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px #EFEDB9;
+  }
+  /* content area */
+  .content{
+      margin-right: 15px;
+     
+    }
+  .maintenance, .turf,.landscaping{
+      margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-image: url("http://www.magnolialawn.com/wp-content/uploads/2016/09/Magnolia-Lawn-Inc._September_Types-of-Lawn-Mowing-Patterns_Image1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      
+  }
+  .maintenanceTitle, .turfTitle, .landscapingTitle{
+      text-decoration: underline aliceblue;
+      color: #EFEDB9;
+      text-shadow: -1px 0 1px #000;
+  }
+  .maintenance img, .turf img, .landscaping img{
+      width: 100%;
+      margin-right: 5px;
+  }
+  .maintenanceText, .turfText, .landscapingText{
+      background-image: radial-gradient(aliceblue, #efedb9);
+      padding: 5px;
+      text-decoration: none;
+      border-radius: 2px;
+  }
+/* footer area */
+.footer{
+    display:inline;
+    display: flex;
+    margin: 5px;
+    max-width: 98vw;
+    border: 1px solid #000;
+    flex-wrap: wrap;
+    background-image: radial-gradient(#6cb60d, #6b512d )
+}
+.col1, .col2, .col3{
+    flex: 1;
+    padding: 5px 0 10px 5px;
+    flex-basis: 100%;
+    color: #EFEDB9;
+
+    
+}
+.col1 h1{
+    font-size: 1.4em;
+    text-shadow: -1px 1px 1px #2c2c2c;
+}
+.col2 h1{
+    font-size: 1.4em;
+    text-shadow: -1px 1px 1px #2c2c2c;
+}
+.col2 #fbIcon{
+    color: #177ced;
+
+}
+.col2 #twitterIcon{
+    color: #0f53a0;
+
+}
+.col3 h1{
+    font-size: 1.4em;
+    text-shadow: -1px 1px 1px #2c2c2c;
+}
+.col3 a{
+    text-decoration: none;
+    color:#EFEDB9;
+}
+.col3 i{
+    color: #F0E908;
+}
+@media(min-width: 400px){
+    .logoWrap{
+        width: 100%;
+        position: relative;
+    }
+    .logo{
+        right: 25%;
+        font-size: 4em;
+    }
+
+    .CTA{
+        font-size: 2.5em;
+     
+    }
+    .catchy{
+        font-size: 1.6em;
+        margin-right: 25%;
+    
+    }
+    .hero p{
+        font-size: 1.1em;
+    }
+
+}
+@media(min-width: 750px){
+    .bgImg{
+        text-align: left;
+        min-height: 100vh;
+    }
+    .logoWrap{
+        
+        position: absolute;
+        left: 0;
+        margin-bottom: 10px;
+    }
+    .logo{
+        margin-top: 10%;
+        width: 250px;
+        position:absolute;
+        left:12%;
+        font-size: 6em;
+    }
+
+    .CTA{
+        margin-top: 70px;
+        font-size: 2.4em;
+        margin-left: 4%;
+     
+    }
+    .CTA span{
+        font-size: 2.2em;
+        
+     
+    }
+    .catchy{
+        font-size: 1.8em;
+        margin-left: 4%;
+        clip-path: polygon(0 0, 50% 0%, 45% 100%, 0 100%);
+    
+    }
+    .hero p{
+        font-size: 1.5em;
+        margin-left: 4%;
+
+    }
+    #btnBox{
+        display: none;
+    }
+    .navSide{
+        display: flex;
+        position: absolute;
+        background-image: linear-gradient(aliceblue, #efedb9);
+        top: 0;
+        width: 99vw;
+        min-height: 50px;
+        margin-left: 2px;
+        box-shadow: 2px 2px 1px #EFEDB9;
+        padding: 0;
+        z-index: 4;
+        border: solid 1px #2c2c2c;
+        opacity: .98;
+        border-radius: 2px;
+      }
+    .navSide li{
+        flex: 1;
+        display: inline;
+        margin: 5px 10px;
+        font-size: .6em;
+    }
+    .container{
+        position: relative;
+    }
+    .signUp{
+        display: block;
+    }
+    .formWrap{
+        position: absolute;
+        top: 0;
+        right: 2%;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+        background-image: linear-gradient(#EFEDB9, #6cb60d, #58940a);
+        padding: 20px;
+        border-radius: 3px;
+        
+    }
+    .formWrap label, select{
+        display: block;
+        font-family: Cabin;
+    }
+    .formWrap input, .formWrap select{
+        width: 210px;
+        margin-top: 15px;
+    
+    }
+    .formBtn{
+        margin: 8%;
+        font-family: Cabin;
+        font-size: 1.3em;
+        background-color: #F0E908;
+        border-color:#6b512d;
+    
+    }
+    .content{
+        display: flex;
+        justify-items: stretch;
+        margin: 0;
+        background-color: #F0E908;
+    }
+    .landscaping, .turf, .maintenance{
+        box-shadow: -1px 0 5px #2c2c2c;
+
+    }
+    .col1, .col2, .col3{
+        flex-basis: 30%;
+    }
+
+}
+@media(min-width:1000px){
+    .formWrap{
+        transform: scale(1.3,1.3);
+        top: 4%;
+        right:15%;
+    }
+}
